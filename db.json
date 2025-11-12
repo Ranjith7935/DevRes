@@ -1,0 +1,209 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "devuser",
+      "email": "dev@example.com",
+      "password": "123456",
+      "bookmarks": [
+        "10",
+        "3",
+        "2"
+      ],
+      "userlikes": [],
+      "skills": []
+    },
+    {
+      "id": "2",
+      "username": "alice",
+      "email": "alice@dev.com",
+      "password": "pass123",
+      "bookmarks": [],
+      "userlikes": [],
+      "skills": []
+    },
+    {
+      "id": "3",
+      "username": "bob",
+      "email": "bob@dev.com",
+      "password": "bob123",
+      "bookmarks": [],
+      "userlikes": [],
+      "skills": []
+    },
+    {
+      "id": "da41",
+      "username": "ram",
+      "email": "ram@gmail.com",
+      "password": "ram",
+      "bookmarks": [],
+      "userlikes": [],
+      "skills": []
+    },
+    {
+      "id": "cb0e",
+      "username": "gavi",
+      "email": "gavi@gmail.com",
+      "password": "gavi",
+      "bookmarks": [],
+      "userlikes": [],
+      "skills": []
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "username": "devuser",
+      "title": "Building REST APIs with Node.js",
+      "content": "A quick guide to setting up Express.js for beginners.",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "tags": [
+        "Node.js",
+        "Backend"
+      ],
+      "likes": 12,
+      "comments": []
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "username": "alice",
+      "title": "React State Management",
+      "content": "Understanding React hooks and context in simple terms.",
+      "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+      "tags": [
+        "React",
+        "JavaScript"
+      ],
+      "likes": 8,
+      "comments": []
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "username": "bob",
+      "title": "Intro to Tailwind CSS",
+      "content": "How Tailwind changed the way I design frontend.",
+      "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051",
+      "tags": [
+        "CSS",
+        "Design"
+      ],
+      "likes": 5,
+      "comments": []
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "username": "devuser",
+      "title": "Mastering Git & GitHub",
+      "content": "Version control like a pro — practical workflow tips.",
+      "image": "https://th.bing.com/th/id/OIP.mwSalGu8JzP3_IsJlWUhywHaEd?w=290&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "tags": [
+        "Git",
+        "Tools"
+      ],
+      "likes": 20,
+      "comments": []
+    },
+    {
+      "id": "5",
+      "userId": 2,
+      "username": "alice",
+      "title": "Docker Basics",
+      "content": "Containers made easy for beginners.",
+      "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ],
+      "likes": 7,
+      "comments": []
+    },
+    {
+      "id": "6",
+      "userId": 3,
+      "username": "bob",
+      "title": "Python for Web Devs",
+      "content": "Using Flask and FastAPI for web apps.",
+      "image": "data:image/webp;base64,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",
+      "tags": [
+        "Python",
+        "WebDev"
+      ],
+      "likes": 6,
+      "comments": []
+    },
+    {
+      "id": "7",
+      "userId": 2,
+      "username": "alice",
+      "title": "Intro to TypeScript",
+      "content": "Why TypeScript improves your JS workflow.",
+      "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67",
+      "tags": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "likes": 10,
+      "comments": []
+    },
+    {
+      "id": "84de",
+      "userId": 3,
+      "username": "bob",
+      "title": "Next.js Performance Tricks",
+      "content": "Learn image optimization and SSR techniques.",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.826a_oxgYrJc5N-M55IsmQHaD7?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "tags": [
+        "Next.js",
+        "React"
+      ],
+      "likes": 14,
+      "comments": []
+    },
+    {
+      "id": "9",
+      "userId": 1,
+      "username": "devuser",
+      "title": "Building APIs with Spring Boot",
+      "content": "Java developers, this one’s for you.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "tags": [
+        "Java",
+        "SpringBoot"
+      ],
+      "likes": 9,
+      "comments": []
+    },
+    {
+      "id": "10",
+      "userId": 2,
+      "username": "alice",
+      "title": "CSS Grid Magic",
+      "content": "Layouts made beautiful and responsive.",
+      "image": "https://www.programandoamedianoche.com/wp-content/uploads/2019/03/G14.jpg",
+      "tags": [
+        "CSS",
+        "Frontend"
+      ],
+      "likes": 11,
+      "comments": []
+    },
+    {
+      "id": "d4b95152-ce37-4926-9de9-78e12de7e91e",
+      "userId": "1",
+      "username": "devuser",
+      "title": "BASiC OF HTML",
+      "content": "learn html and becomme an expert",
+      "image": "https://th.bing.com/th/id/OIP.9_ehEHJrlxmlRSAbPOhCFAHaEJ?w=296&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "tags": [
+        "HTML",
+        "Tools"
+      ],
+      "likes": 0,
+      "comments": []
+    }
+  ]
+}

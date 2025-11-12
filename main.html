@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevRes • Feed</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="dark-theme">
+  <div id="toastContainer"></div>
+
+ <!-- Sidebar (replace your current aside with this) -->
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-top">
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <h2 class="logo">DevRes</h2>
+  </div>
+
+  <ul>
+    <li><a href="main.html" class="active"><i class="fa-solid fa-house"></i> <span class="nav-label">Feed</span></a></li>
+    <li><a href="profile.html"><i class="fa-solid fa-user"></i> <span class="nav-label">Profile</span></a></li>
+    <li><a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i> <span class="nav-label">Bookmarks</span></a></li>
+    <li><a href="activity.html"><i class="fa-solid fa-clock-rotate-left"></i> <span class="nav-label">Activity</span></a></li>
+    <li><a href="#" id="addPost"><i class="fa-solid fa-plus"></i> <span class="nav-label">Add Post</span></a></li>
+    <li><a href="#" onclick="logoutUser(event)"><i class="fa-solid fa-right-from-bracket"></i> <span class="nav-label">Logout</span></a></li>
+  </ul>
+</aside>
+
+  <main class="feed">
+    <header>
+      <h1>Developer Feed</h1>
+
+      <input type="text" id="searchBar" placeholder="Search posts..." />
+    </header>
+    
+    
+
+
+    <div id="postsContainer" class="posts-container">
+      <!-- Posts will be loaded here dynamically -->
+    </div>
+     <!-- ======= Add Post Popup ======= -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup" id="popupBox">
+    <h2>Create New Post</h2>
+    <form id="postForm">
+      <input type="text" id="postTitle" placeholder="Post Title" required />
+      <textarea id="postContent" placeholder="Write something..." required></textarea>
+      <input type="text" id="postImage" placeholder="Image URL (optional)" />
+      <input type="text" id="postTags" placeholder="Tags (comma separated)" />
+      <div class="popup-buttons">
+        <button type="submit" id="submitPost">Submit</button>
+        <button type="button" id="cancelPost">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  </main>
+  <script src="js/ui.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

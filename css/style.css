@@ -1,0 +1,266 @@
+/* =============================
+   DevRes Dark Theme (Readable Edition)
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.dark-theme {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #111, #000);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== Brand ===== */
+.brand {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff007a, #ff5f00, #ffca00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+/* ===== Social Buttons ===== */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+
+.social-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-buttons button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.google-btn {
+  background: #fff;
+  color: #111;
+}
+
+.google-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.github-btn {
+  background: #171515;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.github-btn img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+/* ===== Divider ===== */
+.divider {
+  margin: 40px 0;
+  color: #999;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin: 0 12px;
+}
+
+/* ===== Form Inputs ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+input {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px;
+  margin: 10px 0;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+input:focus {
+  border-color: #ff5f00;
+  outline: none;
+  background: #222;
+}
+
+/* ===== Login Button ===== */
+.login-form button {
+  background: linear-gradient(90deg, #ff007a, #ff5f00, #ffca00);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+}
+
+/* ===== Redirect ===== */
+.redirect {
+  margin-top: 30px;
+  font-size: 17px;
+  color: #ccc;
+}
+
+.redirect a {
+  color: #ff5f00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
+/* ===== Password Field with Eye Icon ===== */
+.password-wrapper {
+  position: relative;
+  width: 360px;
+  margin: 10px 0;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 50px; /* space for icon */
+  height: 52px; /* makes it tall and clear */
+  font-size: 18px;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.password-wrapper input:focus {
+  border-color: #ff5f00;
+  outline: none;
+  background: #222;
+}
+
+/* ===== Eye Icon Styling ===== */
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 22px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+}
+/* ===== Enhanced Typography & Layout ===== */
+.auth-container,
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* ===== Input Improvements ===== */
+input {
+  font-size: 19px;
+  padding: 16px;
+}
+
+input:focus {
+  border-color: #ff5f00;
+  background: #222;
+  box-shadow: 0 0 10px rgba(255, 95, 0, 0.3);
+}
+
+/* ===== Button Glow ===== */
+button {
+  font-size: 19px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 95, 0, 0.6);
+}
+/* ===== Dashboard ===== */
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  .social-buttons,
+  .login-form,
+  .password-wrapper {
+    width: 90%;
+  }
+
+  .brand {
+    font-size: 48px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
